@@ -1,17 +1,18 @@
 import { GoHeartFill } from 'react-icons/go'
 import { PAGES } from '../../app/route'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header className="text-white bg-accent p-2">
       <div className="container">
         <div className="flex items-center justify-between">
-          <a href={PAGES.ROOT} className="font-medium uppercase text-2xl">
+          <Link to={PAGES.ROOT} className="font-medium uppercase text-2xl">
             My Cinema
-          </a>
-          <a href={PAGES.FAVORITES} className="btn btn-ghost btn-square btn-sm">
+          </Link>
+          <Link to={PAGES.FAVORITES} className="btn btn-ghost btn-square btn-sm">
             <GoHeartFill className='w-6 h-6' />
-          </a>
+          </Link>
         </div>
       </div>
     </header>

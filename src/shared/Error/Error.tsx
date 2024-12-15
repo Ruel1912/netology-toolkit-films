@@ -6,7 +6,7 @@ interface ErrorProps {
 
 const Error: FC<ErrorProps> = ({ error }) => {
   return (
-    <h1 className='badge badge-error'>{error}</h1>
+    <h1 className='badge badge-error p-2 m-3'>{error}</h1>
   )
 }
 

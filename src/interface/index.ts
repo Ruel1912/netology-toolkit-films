@@ -6,6 +6,11 @@ export interface IFilm {
   Director: string
   Actors: string
   Poster: string
+  Plot: string
   imdbRating: string
   imdbID: string
+}
+
+export interface IFilmSearch {
+  Search: IFilm[]
 }
